@@ -10,18 +10,19 @@ class Settings():
 
         # ship settings
         self.ship_speed = 5
+        # count user ships
         self.ship_limit = 3
 
         #bullet settings
         self.bullet_speed = 10
-        self.bullet_width = 600
+        self.bullet_width = 3
         self.bullet_height = 10
         self.bullet_color = (0, 0, 0)
-        self.bullets_allowed = 3
+        self.bullets_allowed = 4
 
         #alien's settings
         self.alien_speed = 1
 
         # fleet direction right = 1, direction left = -1
         self.fleet_direction = 2
-        self.fleet_drop_speed = 10
+        self.fleet_drop_speed = 12
