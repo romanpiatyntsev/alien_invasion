@@ -8,7 +8,7 @@ class Ship():
         # get main screen
         self.screen = ai_game.screen
         self.screen_rect = ai_game.screen.get_rect()
-        
+
         # get ship screen
         self.image = pygame.image.load('images/ship.bmp')
         self.rect = self.image.get_rect()
@@ -34,3 +34,9 @@ class Ship():
     def blitme(self):
         """Render Model"""
         self.screen.blit(self.image, self.rect)
+
+    def center_ship(self):
+        """movie ship to center"""
+        self.rect.midbottom = self.screen_rect.midbottom
+        self.x = float(self.rect.x)
+
